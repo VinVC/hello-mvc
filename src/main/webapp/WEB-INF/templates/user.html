@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user info</title>
+</head>
+
+<body>
+    {% block main %}
+
+    {% if user == null %}
+    <h3>Welcome!</h3>
+    {% else %}
+    <h3>Welcome {{ user.name }}!</h3>
+    <h3>Welcome {{ user.email }}!</h3>
+    {% endif %}
+
+    {% endblock %}
+</body>
+
+</html>
